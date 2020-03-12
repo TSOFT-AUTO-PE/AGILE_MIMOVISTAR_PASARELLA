@@ -25,12 +25,12 @@
   <component name="ProjectId" id="1V57SUtJ2jtO1BzZFtzF13tAaWd" />
   <component name="PropertiesComponent">
     <property name="last.edited.regexp" value="Sample Text" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/sikulixapi.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/excel" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29770115" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -39,11 +39,11 @@
       <recent name="com.tsoft.bot.frontend" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Naimar\web-automation-framework\src\main\resources\excel" />
       <recent name="C:\Users\admin\Desktop\WEB\web-automation-framework\src\main\resources" />
       <recent name="C:\Users\admin\Desktop\WEB\web-automation-framework\src\main\java\com\tsoft\bot\frontend\utility" />
       <recent name="C:\Users\admin\Desktop\WEB\web-automation-framework\src\main\resources\excel" />
       <recent name="C:\Users\admin\Desktop\WEB\web-automation-framework\src\main\resources\features" />
-      <recent name="C:\Users\admin\Desktop\web-automation-framework\web-automation-framework\src\main\resources\excel" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -58,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CallerJSON_MiMovistarRecarga">
+  <component name="RunManager" selected="TestNG.RunTest">
     <configuration name="CallerJSON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tsoft.bot.frontend.utility.CallerJSON" />
       <module name="web-automation-framework" />
@@ -140,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CallerJSON_MiMovistarRecarga" />
         <item itemvalue="TestNG.RunTest" />
-        <item itemvalue="Cucumber java.Feature: MyFlight_Login" />
         <item itemvalue="Cucumber java.Feature: MiMovistar_FlujoRecargas" />
+        <item itemvalue="Application.CallerJSON_MiMovistarRecarga" />
+        <item itemvalue="Cucumber java.Feature: MyFlight_Login" />
         <item itemvalue="Application.CallerJSON" />
       </list>
     </recent_temporary>
