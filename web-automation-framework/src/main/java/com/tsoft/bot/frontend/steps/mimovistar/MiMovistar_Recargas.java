@@ -64,8 +64,8 @@ public class MiMovistar_Recargas {
             String telefono = getData().get(recargas).get(COLUMNA_TELEFONO);
             driver.findElement(TXT_NUMERO_MOVISTAR).sendKeys(telefono);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el telefono : " + telefono);
-            generateWord.sendText("Se ingresó el telefono :" + telefono);
-            generateWord.addImageToWord(driver);
+           // generateWord.sendText("Se ingresó el telefono :" + telefono);
+           // generateWord.addImageToWord(driver);
 
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
@@ -84,8 +84,8 @@ public class MiMovistar_Recargas {
             String monto = getData().get(recargas).get(COLUMNA_MONTO);
             driver.findElement(TXT_MONTO).sendKeys(monto);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el monto en soles : " + monto);
-            generateWord.sendText("Se ingresó el monto en soles: " + monto);
-            generateWord.addImageToWord(driver);
+            //generateWord.sendText("Se ingresó el monto en soles: " + monto);
+            //generateWord.addImageToWord(driver);
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
@@ -99,10 +99,11 @@ public class MiMovistar_Recargas {
     @And("^se da click en el boton Continuar$")
     public void seDaClickEnElBotonContinuar() throws Throwable {
         try {
-            driver.findElement(BTN_CONTINUAR).click();
-            ExtentReportUtil.INSTANCE.stepPass(driver, "Se dió clic en el botón Contiuar");
+
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se da clic en el botón Continuar");
             generateWord.sendText("Se dió clic en el botón Continuar ");
             generateWord.addImageToWord(driver);
+            driver.findElement(BTN_CONTINUAR).click();
             Thread.sleep(4000);
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
@@ -121,13 +122,14 @@ public class MiMovistar_Recargas {
             Thread.sleep(5000);
             driver.switchTo().frame(0);
             driver.findElement(TXT_CORREO2).sendKeys(correo);
+
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresa el correo: " + correo + "Se da clic en continuar");
+            generateWord.sendText("Se ingresa el correo: " + correo + "Se da clic en continuar");
+            generateWord.addImageToWord(driver);
+            //ExtentReportUtil.INSTANCE.stepPass(driver, "Se dió clic en el botón Contiuar2");
+            //generateWord.sendText("Se dió clic en el botón Continuar 2");
+            //generateWord.addImageToWord(driver);
             driver.findElement(BTN_CONTINUAR22).click();
-            ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresa el correo: " + correo);
-            generateWord.sendText("Se ingresa el correo: " + correo);
-            generateWord.addImageToWord(driver);
-            ExtentReportUtil.INSTANCE.stepPass(driver, "Se dió clic en el botón Contiuar2");
-            generateWord.sendText("Se dió clic en el botón Continuar 2");
-            generateWord.addImageToWord(driver);
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
@@ -165,8 +167,8 @@ public class MiMovistar_Recargas {
             Select select = new Select(driver.findElement(By.id("expiryDateMonthInput")));
             select.selectByValue(mes);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el mes: "+mes);
-            generateWord.sendText("Se ingresó el mes : 03");
-            generateWord.addImageToWord(driver);
+           // generateWord.sendText("Se ingresó el mes : 03");
+            //generateWord.addImageToWord(driver);
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
@@ -184,8 +186,8 @@ public class MiMovistar_Recargas {
             Select select = new Select(driver.findElement(By.id("expiryDateYearInput")));
             select.selectByVisibleText(anio);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el año: "+anio);
-            generateWord.sendText("Se ingresó el año: 2020");
-            generateWord.addImageToWord(driver);
+            //generateWord.sendText("Se ingresó el año: 2020");
+            //generateWord.addImageToWord(driver);
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
@@ -202,8 +204,8 @@ public class MiMovistar_Recargas {
             String cvv = getData().get(recargas).get(COLUMNA_COD_CVV);
             driver.findElement(TXT_CVV2).sendKeys(cvv);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó EL CÓDIGO CVV: "+cvv);
-            generateWord.sendText("Se ingresó EL CÓDIGO CVV: 740");
-            generateWord.addImageToWord(driver);
+            //generateWord.sendText("Se ingresó EL CÓDIGO CVV: " + cvv);
+            //generateWord.addImageToWord(driver);
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
@@ -216,6 +218,9 @@ public class MiMovistar_Recargas {
     @And("^se da click en el boton Pagar$")
     public void seDaClickEnElBotonPagar() throws Throwable {
         try {
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingrresaron los datos de la tarjeta, se da clic en pagar");
+            generateWord.sendText("Se realizara la recarga con los datos de la tarjeta completos " );
+            generateWord.addImageToWord(driver);
             driver.findElement(BTN_PAGAR2).click();
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
@@ -232,17 +237,19 @@ public class MiMovistar_Recargas {
             try{
                 String codigo2 = driver.findElement(LBL_CODIGO_C).getText();
                 ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "PASS");
+                ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, codigo2);
                 ExtentReportUtil.INSTANCE.stepWarning(driver, "Verificar Imagen Flujo");
                 ExtentReportUtil.INSTANCE.stepWarning(driver, "Se extrae los siguientes datos: "+codigo2);
-                generateWord.sendText("Se finalizó el flujo");
+                generateWord.sendText("Finalizo la recarga correctamente con el ID de Pedido: " + codigo2);
                 generateWord.addImageToWord(driver);
                 driver.findElement(BTN_FINAL).click();
             }catch(Exception e){
                  String codigo1 = driver.findElement(LBL_CODIGO_E).getText();
                  ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "PASS");
+                ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 10, codigo1);
                  ExtentReportUtil.INSTANCE.stepWarning(driver, "Verificar Imagen Flujo");
                  ExtentReportUtil.INSTANCE.stepWarning(driver, "Se extrae los siguientes datos: "+codigo1);
-                 generateWord.sendText("Se finalizó el flujo");
+                 generateWord.sendText("Recarga Fallida, Id Generado es: " + codigo1);
                  generateWord.addImageToWord(driver);
                  driver.findElement(BTN_FINAL).click();
             }
