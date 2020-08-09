@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 @CucumberOptions(
 		features={"src//main//resources//features"},
-		glue={"com.tsoft.bot.frontend.steps.mimovistar","com.tsoft.bot.frontend.helpers"},
+		glue={"com.tsoft.bot.frontend.steps.webMiMovistar","com.tsoft.bot.frontend.helpers"},
 		plugin = {"pretty", "html:target/cucumber"},
 		tags = {"@Test_3"},
 		monochrome = true

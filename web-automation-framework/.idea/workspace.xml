@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="360574ac-4aaa-4518-a335-6fb560437bee" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,16 +18,21 @@
     </option>
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1V57SUtJ2jtO1BzZFtzF13tAaWd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last.edited.regexp" value="Sample Text" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../workspace/mobile-automation-framework" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29770115" />
@@ -39,24 +46,12 @@
       <recent name="com.tsoft.bot.frontend" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\FiorellaVargas\AGILE_MIMOVISTAR_PASARELLA-master\AGILE_MIMOVISTAR_PASARELLA-master\web-automation-framework\src\main\resources\excel" />
+      <recent name="E:\FiorellaVargas\AGILE_MIMOVISTAR_PASARELLA-master\AGILE_MIMOVISTAR_PASARELLA-master\web-automation-framework\src\main\resources\driver" />
       <recent name="C:\Users\admin\Desktop\Naimar\web-automation-framework\src\main\resources\excel" />
       <recent name="C:\Users\admin\Desktop\WEB\web-automation-framework\src\main\resources" />
       <recent name="C:\Users\admin\Desktop\WEB\web-automation-framework\src\main\java\com\tsoft\bot\frontend\utility" />
-      <recent name="C:\Users\admin\Desktop\WEB\web-automation-framework\src\main\resources\excel" />
-      <recent name="C:\Users\admin\Desktop\WEB\web-automation-framework\src\main\resources\features" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="TestNG.RunTest">
     <configuration name="CallerJSON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -85,14 +80,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: MiMovistar_FlujoRecargas" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: MyFlight_Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MiMovistar_FlujoRecargas.feature" />
-      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.mimovistar" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MyFlight_Login.feature" />
+      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.myflight" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="web-automation-framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: MiMovistar_FlujoRecargas" />
+      <option name="SUGGESTED_NAME" value="Feature: MyFlight_Login" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -103,14 +98,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: MyFlight_Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Recargas en Mi Movistar Completo (Generando automáticamente Token URL)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MyFlight_Login.feature" />
-      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.myflight" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MiMovistar_FlujoRecargas.feature" />
+      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.mimovistar" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="web-automation-framework" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: MyFlight_Login" />
+      <option name="NAME_FILTER" value="^Recargas en Mi Movistar Completo \(Generando automáticamente Token URL\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Recargas en Mi Movistar Completo \(Generando automáticamente Token URL\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Recargas en Mi Movistar Completo (Generando automáticamente Token URL)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -141,13 +138,13 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RunTest" />
-        <item itemvalue="Cucumber java.Feature: MiMovistar_FlujoRecargas" />
+        <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar Completo (Generando automáticamente Token URL)" />
         <item itemvalue="Application.CallerJSON_MiMovistarRecarga" />
-        <item itemvalue="Cucumber java.Feature: MyFlight_Login" />
         <item itemvalue="Application.CallerJSON" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -163,5 +160,47 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.feature" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596931685837">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596931685837" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596930960175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596930960175" />
+    <state width="1877" height="251" key="GridCell.Tab.0.bottom" timestamp="1596946489486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596946489486" />
+    <state width="1877" height="251" key="GridCell.Tab.0.center" timestamp="1596946489486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596946489486" />
+    <state width="1877" height="251" key="GridCell.Tab.0.left" timestamp="1596946489486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596946489486" />
+    <state width="1877" height="251" key="GridCell.Tab.0.right" timestamp="1596946489486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596946489486" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1596850748434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748434" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1596850748434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748434" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1596850748433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748433" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1596850748434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748434" />
   </component>
 </project>

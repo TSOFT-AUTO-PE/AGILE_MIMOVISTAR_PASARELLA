@@ -104,11 +104,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 11852353200,
+  "duration": 363393800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 219852800,
+  "duration": 7604902299,
   "status": "passed"
 });
 formatter.scenario({
@@ -210,10 +210,10 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MiMovistar_Recargas.seGeneraLaURLMedianteElAPI_TEST_recargas()"
+  "location": "stepsRecargasHome.seGeneraLaURLMedianteElAPI_TEST_recargas()"
 });
 formatter.result({
-  "duration": 4584323700,
+  "duration": 4421488800,
   "status": "passed"
 });
 formatter.match({
@@ -223,10 +223,10 @@ formatter.match({
       "offset": 40
     }
   ],
-  "location": "MiMovistar_Recargas.seIngresaEnLaURLElTokenGenerado(String)"
+  "location": "stepsRecargasHome.seIngresaEnLaURLElTokenGenerado(String)"
 });
 formatter.result({
-  "duration": 8356474200,
+  "duration": 3188849600,
   "status": "passed"
 });
 formatter.match({
@@ -236,10 +236,10 @@ formatter.match({
       "offset": 30
     }
   ],
-  "location": "MiMovistar_Recargas.seIngresaElNumeroCelular(String)"
+  "location": "stepsRecargasHome.seIngresaElNumeroCelular(String)"
 });
 formatter.result({
-  "duration": 707787900,
+  "duration": 782054300,
   "status": "passed"
 });
 formatter.match({
@@ -249,17 +249,17 @@ formatter.match({
       "offset": 18
     }
   ],
-  "location": "MiMovistar_Recargas.montoARecargar(String)"
+  "location": "stepsRecargasHome.montoARecargar(String)"
 });
 formatter.result({
-  "duration": 643284300,
+  "duration": 987588400,
   "status": "passed"
 });
 formatter.match({
-  "location": "MiMovistar_Recargas.seDaClickEnElBotonContinuar()"
+  "location": "stepsRecargasHome.seDaClickEnElBotonContinuar()"
 });
 formatter.result({
-  "duration": 4830648400,
+  "duration": 834929801,
   "status": "passed"
 });
 formatter.match({
@@ -269,10 +269,10 @@ formatter.match({
       "offset": 21
     }
   ],
-  "location": "MiMovistar_Recargas.seIngresaElEmailYSeDaClickEnContinuar(String)"
+  "location": "stepsRecargasCorreo.seIngresaElEmailYSeDaClickEnContinuar(String)"
 });
 formatter.result({
-  "duration": 6359621000,
+  "duration": 9667216200,
   "status": "passed"
 });
 formatter.match({
@@ -282,10 +282,10 @@ formatter.match({
       "offset": 33
     }
   ],
-  "location": "MiMovistar_Recargas.seIngresaElNumeroDeTarjeta(String)"
+  "location": "stepsRecargasPago.seIngresaElNumeroDeTarjeta(String)"
 });
 formatter.result({
-  "duration": 16130716500,
+  "duration": 6201531000,
   "status": "passed"
 });
 formatter.match({
@@ -295,10 +295,10 @@ formatter.match({
       "offset": 34
     }
   ],
-  "location": "MiMovistar_Recargas.seIngresaElMesDeVencimiento(String)"
+  "location": "stepsRecargasPago.seIngresaElMesDeVencimiento(String)"
 });
 formatter.result({
-  "duration": 781725400,
+  "duration": 675977100,
   "status": "passed"
 });
 formatter.match({
@@ -308,10 +308,10 @@ formatter.match({
       "offset": 35
     }
   ],
-  "location": "MiMovistar_Recargas.seIngresaElAnioDeVencimiento(String)"
+  "location": "stepsRecargasPago.seIngresaElAnioDeVencimiento(String)"
 });
 formatter.result({
-  "duration": 639077800,
+  "duration": 558037700,
   "status": "passed"
 });
 formatter.match({
@@ -321,28 +321,28 @@ formatter.match({
       "offset": 38
     }
   ],
-  "location": "MiMovistar_Recargas.seIngresaElCodigoDeVerificacion(String)"
+  "location": "stepsRecargasPago.seIngresaElCodigoDeVerificacion(String)"
 });
 formatter.result({
-  "duration": 488406900,
+  "duration": 633280600,
   "status": "passed"
 });
 formatter.match({
-  "location": "MiMovistar_Recargas.seDaClickEnElBotonPagar()"
+  "location": "stepsRecargasPago.seDaClickEnElBotonPagar()"
 });
 formatter.result({
-  "duration": 902996500,
+  "duration": 982392499,
   "status": "passed"
 });
 formatter.match({
-  "location": "MiMovistar_Recargas.seVerificaQueSeHizoLaRecargaCorrecta()"
+  "location": "stepsRecargasFinal.seVerificaQueSeHizoLaRecargaCorrecta()"
 });
 formatter.result({
-  "duration": 24591827200,
+  "duration": 16662093500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1564966600,
+  "duration": 1975117900,
   "status": "passed"
 });
 });
