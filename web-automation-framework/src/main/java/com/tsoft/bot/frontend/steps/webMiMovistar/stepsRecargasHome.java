@@ -1,10 +1,8 @@
 package com.tsoft.bot.frontend.steps.webMiMovistar;
 
-import com.tsoft.bot.frontend.BaseClass;
 import com.tsoft.bot.frontend.pageobject.webMiMovistar.PageRecargasHome;
 import com.tsoft.bot.frontend.utility.CallerJSON_MiMovistarRecarga;
-import com.tsoft.bot.frontend.utility.ExcelReader;
-import com.tsoft.bot.frontend.utility.ExtentReportUtil;
+import com.tsoft.bot.frontend.utility.CallerJSON_MiMovistarRecargaV2;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 
@@ -34,5 +32,11 @@ public class stepsRecargasHome extends PageRecargasHome{
     @Given("^se genera la URL mediante el API_TEST_recargas$")
     public void seGeneraLaURLMedianteElAPI_TEST_recargas() {
         CallerJSON_MiMovistarRecarga.API_API_TEST_recargas();
+    }
+
+
+    @Given("^se genera la URL mediante el API_TEST_recargasVersion(\\d+)$")
+    public void seGeneraLaURLMedianteElAPI_TEST_recargasVersion(int arg0) {
+        CallerJSON_MiMovistarRecargaV2.API_API_TEST_recargas();
     }
 }

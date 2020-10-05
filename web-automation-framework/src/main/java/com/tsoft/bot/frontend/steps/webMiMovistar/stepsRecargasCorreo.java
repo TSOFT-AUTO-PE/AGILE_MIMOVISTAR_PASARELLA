@@ -1,8 +1,6 @@
 package com.tsoft.bot.frontend.steps.webMiMovistar;
 
 import com.tsoft.bot.frontend.pageobject.webMiMovistar.PageRecargasCorreo;
-import com.tsoft.bot.frontend.utility.ExcelReader;
-import com.tsoft.bot.frontend.utility.ExtentReportUtil;
 import cucumber.api.java.en.When;
 
 
@@ -13,4 +11,8 @@ public class stepsRecargasCorreo extends PageRecargasCorreo{
         PageRecargasCorreo.ingresarCorreo_clickContinuar(casoDePrueba);
     }
 
+    @When("^se ingresara el email \"([^\"]*)\" y se da click en continuar$")
+    public void seIngresaraElEmailYSeDaClickEnContinuar(String casoDePrueba) throws Throwable {
+        PageRecargasCorreo.ingresarCorreov2_clickContinuar(casoDePrueba);
+    }
 }

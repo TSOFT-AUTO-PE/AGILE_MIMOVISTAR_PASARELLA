@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 		features={"src//main//resources//features"},
 		glue={"com.tsoft.bot.frontend.steps.webMiMovistar","com.tsoft.bot.frontend.helpers"},
 		plugin = {"pretty", "html:target/cucumber"},
-		tags = {"@Test_3"},
+		tags = {"@Test_6"},
 		monochrome = true
 	)
 

@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-public class CallerJSON_MiMovistarRecarga {
+public class CallerJSON_MiMovistarRecargaV2 {
 
     private static final String EXCEL_WEB = "excel/MiMovistar_Recargas.xlsx";
     private static final String RECARGAS_WEB = "Recargas";
@@ -46,10 +46,18 @@ public class CallerJSON_MiMovistarRecarga {
 
         String result = "";
 
-        HttpPost post = new HttpPost("https://api.us-east.apiconnect.ibmcloud.com/telefonica-del-peru-development/topen/webviews/v1/users/me/phone-numbers/920957951/webviews/account_topup_external_payment");
+        HttpPost post = new HttpPost("https://api.us-east.apiconnect.ibmcloud.com/telefonica-del-peru-development/topen/webviews/v1/users/MSISDN-920959103/webviews/external_payment_gateway");
+
+//        post.addHeader("Content-Type", "text/plain");
+//        post.addHeader("Content-Length", "<calculated when request is sent>");
+//        post.addHeader("Host", "<calculated when request is sent>");
+//        post.addHeader("User-Agent", "PostmanRuntime/7.26.2");
+//        post.addHeader("Accept ", "*/*");
+//        post.addHeader("Accept-Encoding", "gzip, deflate, br");
+//        post.addHeader("Connection", "keep-alive");
         post.addHeader("Content-Type", "application/json");
-        post.addHeader("X-IBM-Client-Id", "e70e694e-46e7-4de2-82ce-e98fd25c4ff0");
-        post.addHeader("X-IBM-Client-Secret", "J6hQ2tM0cW2xB6nW6bB7jJ3dU1eT4lQ0aV6rJ4nH7tX3rF8sU2");
+        post.addHeader("X-IBM-Client-Id", "75f1ccf2-3b4d-47d3-8e23-bbb7960b9f6d");
+        post.addHeader("X-IBM-Client-Secret", "V4lR5lM4pR1eJ2fG3fM8qF8mH5dD5uY5xR5cB4tH1pS0rA6lS2");
         post.addHeader("x-user-id", "5435");
         post.addHeader("x-client-id", "43543");
         post.addHeader("x-scope", "4535");
@@ -65,11 +73,20 @@ public class CallerJSON_MiMovistarRecarga {
 
         StringBuilder entity = new StringBuilder();
         entity.append("{");
-        entity.append("\"callback_url\": \"https://novum.com/endtest?state=2\",");
+        entity.append("\"callback_url\": \"www.movistar.com.pe/recargas\",");
         entity.append("\"nonce\": \"4zg86i78-7060-4590-9f9-4d967f79bf143\",");
         entity.append("\"payload\": {\n" +
-                "        \"msisdn\": \"51920954470\"\n" +           //51920954470 tarjeta           //51920953950 normal
-                "    }");
+                "        \"application\":\t\"Portal\",\n" +
+                "\t\t\"amount\":\t\"15.00\",\n" +
+                "\t\t\"customerId\":\"57025851\",\n" +
+                "\t\t\"accountId\":\"566058585\",\n" +
+                "\t\t\"channelId\":\"02500000003\",\n" +
+                "\t\t\"itemId\":\"920959901\",\n" +
+                "\t\t\"itemType\":\"topUp\",\n" +
+                "\t\t\"correlationId\":\"IdNuestro\",\n" +
+                "\t\t\"antiFraud2\":\"920959901\",\n" +
+                "\t\t\"displayedText\":\"920959901\"\n" +
+                "\t}");
         entity.append("}");
 
         // send a JSON data
@@ -80,9 +97,13 @@ public class CallerJSON_MiMovistarRecarga {
 
             result = EntityUtils.toString(response.getEntity());
         }
+
         String url = result;
-        ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 1, url.substring(8, url.length() -2));
-        return url;
+        String url1= url.substring(8, url.length() -2);
+        String url3 = url1.concat("&aplicationid=c8493f89-41ed-42fc-a704-b8499240964c");
+        ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 1, url3);
+        return url3;
+
         
     }
 

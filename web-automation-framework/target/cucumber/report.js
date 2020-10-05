@@ -8,15 +8,19 @@ formatter.feature({
 });
 formatter.scenarioOutline({
   "line": 33,
-  "name": "Recargas en Mi Movistar Completo (Generando automáticamente Token URL)",
+  "name": "Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)",
   "description": "",
-  "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-(generando-automáticamente-token-url)",
+  "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-movil-(generando-automáticamente-token-url)",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 32,
       "name": "@Test_3"
+    },
+    {
+      "line": 32,
+      "name": "@Regresion"
     }
   ]
 });
@@ -84,41 +88,45 @@ formatter.examples({
   "line": 48,
   "name": "",
   "description": "",
-  "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-(generando-automáticamente-token-url);",
+  "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-movil-(generando-automáticamente-token-url);",
   "rows": [
     {
       "cells": [
         "caso_prueba"
       ],
       "line": 49,
-      "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-(generando-automáticamente-token-url);;1"
+      "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-movil-(generando-automáticamente-token-url);;1"
     },
     {
       "cells": [
         "1"
       ],
       "line": 50,
-      "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-(generando-automáticamente-token-url);;2"
+      "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-movil-(generando-automáticamente-token-url);;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 363393800,
+  "duration": 404805800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7604902299,
+  "duration": 7505908100,
   "status": "passed"
 });
 formatter.scenario({
   "line": 50,
-  "name": "Recargas en Mi Movistar Completo (Generando automáticamente Token URL)",
+  "name": "Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)",
   "description": "",
-  "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-(generando-automáticamente-token-url);;2",
+  "id": "mi-movistar-flujo-de-recargas;recargas-en-mi-movistar-completo-movil-(generando-automáticamente-token-url);;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
+    {
+      "line": 32,
+      "name": "@Regresion"
+    },
     {
       "line": 32,
       "name": "@Test_3"
@@ -213,7 +221,7 @@ formatter.match({
   "location": "stepsRecargasHome.seGeneraLaURLMedianteElAPI_TEST_recargas()"
 });
 formatter.result({
-  "duration": 4421488800,
+  "duration": 5488971400,
   "status": "passed"
 });
 formatter.match({
@@ -226,7 +234,7 @@ formatter.match({
   "location": "stepsRecargasHome.seIngresaEnLaURLElTokenGenerado(String)"
 });
 formatter.result({
-  "duration": 3188849600,
+  "duration": 2806000500,
   "status": "passed"
 });
 formatter.match({
@@ -239,7 +247,7 @@ formatter.match({
   "location": "stepsRecargasHome.seIngresaElNumeroCelular(String)"
 });
 formatter.result({
-  "duration": 782054300,
+  "duration": 795731600,
   "status": "passed"
 });
 formatter.match({
@@ -252,14 +260,14 @@ formatter.match({
   "location": "stepsRecargasHome.montoARecargar(String)"
 });
 formatter.result({
-  "duration": 987588400,
+  "duration": 1054342400,
   "status": "passed"
 });
 formatter.match({
   "location": "stepsRecargasHome.seDaClickEnElBotonContinuar()"
 });
 formatter.result({
-  "duration": 834929801,
+  "duration": 894717900,
   "status": "passed"
 });
 formatter.match({
@@ -272,7 +280,7 @@ formatter.match({
   "location": "stepsRecargasCorreo.seIngresaElEmailYSeDaClickEnContinuar(String)"
 });
 formatter.result({
-  "duration": 9667216200,
+  "duration": 10511332600,
   "status": "passed"
 });
 formatter.match({
@@ -285,7 +293,7 @@ formatter.match({
   "location": "stepsRecargasPago.seIngresaElNumeroDeTarjeta(String)"
 });
 formatter.result({
-  "duration": 6201531000,
+  "duration": 6075511100,
   "status": "passed"
 });
 formatter.match({
@@ -298,7 +306,7 @@ formatter.match({
   "location": "stepsRecargasPago.seIngresaElMesDeVencimiento(String)"
 });
 formatter.result({
-  "duration": 675977100,
+  "duration": 640828700,
   "status": "passed"
 });
 formatter.match({
@@ -311,7 +319,7 @@ formatter.match({
   "location": "stepsRecargasPago.seIngresaElAnioDeVencimiento(String)"
 });
 formatter.result({
-  "duration": 558037700,
+  "duration": 576722300,
   "status": "passed"
 });
 formatter.match({
@@ -324,25 +332,26 @@ formatter.match({
   "location": "stepsRecargasPago.seIngresaElCodigoDeVerificacion(String)"
 });
 formatter.result({
-  "duration": 633280600,
+  "duration": 599892300,
   "status": "passed"
 });
 formatter.match({
   "location": "stepsRecargasPago.seDaClickEnElBotonPagar()"
 });
 formatter.result({
-  "duration": 982392499,
+  "duration": 945266600,
   "status": "passed"
 });
 formatter.match({
   "location": "stepsRecargasFinal.seVerificaQueSeHizoLaRecargaCorrecta()"
 });
 formatter.result({
-  "duration": 16662093500,
-  "status": "passed"
+  "duration": 46072320700,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/app-root/app-confirm/div/div/div[1]/div[6]/p[2]\"}\n  (Session info: chrome\u003d84.0.4147.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RM7G8MO\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\ABRAHA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62730}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: b8e6914ee31c1a8a024bff420e120223\n*** Element info: {Using\u003dxpath, value\u003d/html/body/app-root/app-confirm/div/div/div[1]/div[6]/p[2]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.tsoft.bot.frontend.pageobject.webMiMovistar.PageRecargaFinal.verificarRecargaFinal(PageRecargaFinal.java:39)\r\n\tat com.tsoft.bot.frontend.steps.webMiMovistar.stepsRecargasFinal.seVerificaQueSeHizoLaRecargaCorrecta(stepsRecargasFinal.java:10)\r\n\tat ✽.Then se verifica que se hizo la recarga correcta.(MiMovistar_FlujoRecargas.feature:46)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 1975117900,
+  "duration": 1414206700,
   "status": "passed"
 });
 });

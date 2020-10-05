@@ -44,6 +44,7 @@ public class PageRecargasPago {
             driver.switchTo().frame(0);
             driver.findElement(TXT_NUM_TARJETA).isDisplayed();
             driver.findElement(TXT_NUM_TARJETA).sendKeys(tarjeta);
+            Thread.sleep(5000);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó la tarjeta de crédito : "+tarjeta);
             generateWord.sendText("Se ingresó la tarjeta de crédito : 4919148107859067");
             generateWord.addImageToWord(driver);
@@ -62,6 +63,7 @@ public class PageRecargasPago {
             String mes = getData().get(recargas).get(COLUMNA_FV_MES);
             Select select = new Select(driver.findElement(By.id("expiryDateMonthInput")));
             select.selectByValue(mes);
+            Thread.sleep(5000);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el mes: "+mes);
             // generateWord.sendText("Se ingresó el mes : 03");
             //generateWord.addImageToWord(driver);
@@ -80,6 +82,7 @@ public class PageRecargasPago {
             String anio = getData().get(recargas).get(COLUMNA_FV_ANIO);
             Select select = new Select(driver.findElement(By.id("expiryDateYearInput")));
             select.selectByVisibleText(anio);
+            Thread.sleep(5000);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el año: "+anio);
             //generateWord.sendText("Se ingresó el año: 2020");
             //generateWord.addImageToWord(driver);
@@ -97,6 +100,7 @@ public class PageRecargasPago {
             int recargas = Integer.parseInt(casoDePrueba) - 1;
             String cvv = getData().get(recargas).get(COLUMNA_COD_CVV);
             driver.findElement(TXT_CVV2).sendKeys(cvv);
+            Thread.sleep(5000);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó EL CÓDIGO CVV: "+cvv);
             //generateWord.sendText("Se ingresó EL CÓDIGO CVV: " + cvv);
             //generateWord.addImageToWord(driver);

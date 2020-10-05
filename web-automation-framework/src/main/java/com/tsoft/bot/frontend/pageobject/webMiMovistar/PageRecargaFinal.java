@@ -6,9 +6,6 @@ import com.tsoft.bot.frontend.utility.ExtentReportUtil;
 import com.tsoft.bot.frontend.utility.GenerateWord;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.HashMap;
 import java.util.List;
@@ -37,7 +34,7 @@ public class PageRecargaFinal {
 
     public static void verificarRecargaFinal() throws Exception {
         try{
-            Thread.sleep(15000);
+            Thread.sleep(20000);
             driver.switchTo().frame(0);
             driver.findElement(LBL_CODIGO_C).isDisplayed();
             String codigo2 = driver.findElement(LBL_CODIGO_C).getText();
